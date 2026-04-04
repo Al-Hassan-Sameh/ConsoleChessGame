@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Software Engineering\\C#\\ConsoleChessProject\\ConsoleChessProject.csproj": {}
+    "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\ConsoleChessProject.csproj": {}
   },
   "projects": {
-    "H:\\Software Engineering\\C#\\ConsoleChessProject\\ConsoleChessProject.csproj": {
+    "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\ConsoleChessProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Software Engineering\\C#\\ConsoleChessProject\\ConsoleChessProject.csproj",
+        "projectUniqueName": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\ConsoleChessProject.csproj",
         "projectName": "ConsoleChessProject",
-        "projectPath": "H:\\Software Engineering\\C#\\ConsoleChessProject\\ConsoleChessProject.csproj",
+        "projectPath": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\ConsoleChessProject.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "H:\\Software Engineering\\C#\\ConsoleChessProject\\obj\\",
+        "outputPath": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
