@@ -1,0 +1,14 @@
+H:\Software Engineering\C#\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.exe
+H:\Software Engineering\C#\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.deps.json
+H:\Software Engineering\C#\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.runtimeconfig.json
+H:\Software Engineering\C#\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.dll
+H:\Software Engineering\C#\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.pdb
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.GeneratedMSBuildEditorConfig.editorconfig
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.AssemblyInfoInputs.cache
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.AssemblyInfo.cs
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.csproj.CoreCompileInputs.cache
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.dll
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\refint\ConsoleChessProject.dll
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.pdb
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.genruntimeconfig.cache
+H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ref\ConsoleChessProject.dll
