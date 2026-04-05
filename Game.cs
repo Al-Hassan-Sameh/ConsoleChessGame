@@ -10,8 +10,8 @@ namespace ConsoleChessProject
     {
         public void Start()
         {
-            Player player1 = new WhitePlayer();
-            Player player2 = new BlackPlayer();
+            Player whitePlayer = new Player();
+            Player blackPlayer = new Player();
 
             Board board = new Board();
             board = Utility.SetUpBoard(board);
@@ -23,32 +23,69 @@ namespace ConsoleChessProject
 
             while (true)
             {
-                do
+                while (piece is not null)
                 {
 
                     move = Utility.ReadNewMove();
+                    if (move.Length < 4)
+                    {
+                        Console.WriteLine("\t\t\t\t\tIt seems like you have a typo!");
+                        continue;
+                    }
                     oldPosition = move[0].ToLower();
                     newPositon = move[1].ToLower();
+                    if(!Utility.IsValidPosition(oldPosition) && !Utility.IsValidPosition(newPositon))
+                    {
+                        continue; 
+                    }
                     while (!Utility.IsEmpty(board, oldPosition))
                     {
                         piece = board.GetPiece(oldPosition);
+                        break;
                     }
+                    if(!Utility.IsWhitePiece(board, piece, oldPosition))
+                    {
+                        continue;
+                    }
+                    if(piece.IsValidMove(board, oldPosition, newPositon))
+                    {
+                        board = whitePlayer.MovePiece(board, piece, newPositon);
+                        break;
+                    }
+                    continue;
                 }
-                while (piece is not null && !Utility.IsWhitePiece(board, piece, oldPosition));
-                board = player1.MovePiece(board, piece, newPositon);
                 Utility.PrintBoard(board);
-                do
+                while (piece is not null)
                 {
+
                     move = Utility.ReadNewMove();
+                    if (move.Length < 4)
+                    {
+                        Console.WriteLine("\t\t\t\t\tIt seems like you have a typo!");
+                        continue;
+                    }
                     oldPosition = move[0].ToLower();
                     newPositon = move[1].ToLower();
+                    if (!Utility.IsValidPosition(oldPosition) && !Utility.IsValidPosition(newPositon))
+                    {
+                        continue;
+                    }
                     while (!Utility.IsEmpty(board, oldPosition))
                     {
                         piece = board.GetPiece(oldPosition);
+                        break;
                     }
+                    if (!Utility.IsBlackPiece(board, piece, oldPosition))
+                    {
+                        continue;
+                    }
+                    if (piece.IsValidMove(board, oldPosition, newPositon))
+                    {
+                        board = blackPlayer.MovePiece(board, piece, newPositon);
+                        break;
+                    }
+                    continue;
                 }
-                while (piece is not null && !Utility.IsBlackPiece(board, piece, oldPosition));
-                board = player2.MovePiece(board, board.GetPiece(oldPosition), newPositon);
                 Utility.PrintBoard(board);
             }
 

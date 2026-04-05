@@ -28,7 +28,7 @@ namespace ConsoleChessProject
                     return true;
                 }
             }
-            Console.WriteLine("\t\t\t\t\tIt's not your piece!");
+            Console.WriteLine("\t\t\t\t\tIt's not your piece!\n\t\t\t\t\t");
             return false;
         }
         public static bool IsWhitePiece(Board b, Piece p, string position)
@@ -50,22 +50,36 @@ namespace ConsoleChessProject
 
             return false;
         }
-        //public static bool IsEmptyTile(Board board, string position)
-        //{
-        //    int i = MapPosition(position).Item1;
-        //    int j = MapPosition(position).Item2;
-
-        //    return board.Tiles[i, j].Equals("•");
-        //}
 
         public static string[] ReadNewMove()
         {
+            Console.Write("\t\t\t\t\t");
             string input = Console.ReadLine();
             string positions = input.Replace(" ", "");
+            if(input.Equals(""))
+            {
+                return new string[2] { "", "" };
+            }
             string oldPosition = positions[0..2];
             string newPosition = positions[2..];
 
             return new string[2] { oldPosition, newPosition };
+        }
+
+        public static bool IsValidPosition(string position)
+        {
+            if (position.Equals(""))
+            {
+                return false;
+            }
+            int[] validRows = new int[8] { 0, 1, 2, 3, 4, 5, 6, 7 };
+            char[] validColumns = new char[8] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
+            int row = (int)char.GetNumericValue(position[1]);
+            char column = Convert.ToChar(position[0]);
+            bool validRow = validRows.Contains(row);
+            bool validColumn = validColumns.Contains(column);
+                
+            return validRow && validColumn;
         }
         public static Board SetUpBoard(Board b)
         {
@@ -135,32 +149,10 @@ namespace ConsoleChessProject
             }
             Console.WriteLine("\t\t\t\t\t   a    b    c    d    e    f    g    h");
             Console.WriteLine("\t\t\t\t\t----------------------------------------");
-            Console.Write("\t\t\t\t\t");
+            //Console.Write("\t\t\t\t\t");
         }
 
 
-        //public static char GetPiece(Board board, string position)
-        //{
-        //    i = MapPosition(position).Item1;
-        //    j = MapPosition(position).Item2;
-        //    for (int i = 0; i < 7; i++)
-        //    {
-        //        for(int j = 0; j < 7; j++)
-        //        {
-        //            if (board.Tiles[i, j])
-        //        }
-        //    }
-        //}
-
-        //public static Piece ConvertHexCodeToPiece(Board b, char hexcode)
-        //{
-        //    switch (hexcode)
-        //    {
-        //        case '\u2654': return b.blackKing;
-        //        case '\u2655': return b.blackQueen;
-        //        case '\u2656'
-        //    }
-        //}
         public static Tuple<int, int> MapPosition(string position)
         {
             int x, y;

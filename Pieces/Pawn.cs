@@ -20,21 +20,22 @@ namespace ConsoleChessProject.Pieces
             int j1 = Utility.MapPosition(oldPosition).Item2;
             int i2 = Utility.MapPosition(newPosition).Item1;
             int j2 = Utility.MapPosition(newPosition).Item2;
+            int deltaX = j2 - j1;
+            int deltaY = i2 - i1;
             if (b.Tiles[i1, j1].Equals(b.blackPawn1.HexCode))
             {
-                bool correctBlackMove = i1 < i2 && j1 == j2;
+                bool correctBlackMove = deltaY == 1 && deltaX == 0;
                 if (!correctBlackMove)
                 {
-                    Console.WriteLine("Invalid Move!");
-                    Console.WriteLine("\t\t\t\t\t");
+                    Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");
                     return false;
                 }
                 return true;
             }
-            bool correctWhiteMove = i1 > i2 && j1 == j2;
+            bool correctWhiteMove = deltaY == -1 && deltaX == 0;
             if (!correctWhiteMove)
             {
-                Console.WriteLine("Invalid Move!\n\t\t\t\t\t");
+                Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");
                 return false;
             }
             return true;
