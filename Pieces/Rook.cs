@@ -9,8 +9,8 @@ namespace ConsoleChessProject.Pieces
         public Rook(string initialposition, char hexcode) 
         {
             this.HexCode = hexcode;
-            this.currentPosition = Utility.MapPosition(initialposition);
-            this.positionString = initialposition;
+            //this.currentPosition = Utility.MapPosition(initialposition);
+            this.CurrentPosition = initialposition;
 
         }
         public override bool IsValidMove(Board b, string oldPosition, string newPosition)
@@ -40,8 +40,9 @@ namespace ConsoleChessProject.Pieces
                     }
                 }
             }
-            Console.WriteLine("Invalid Move!");
+            Console.Write("Invalid Move!\n\t\t\t\t\t");
             return false;
+
         }
     }
 }

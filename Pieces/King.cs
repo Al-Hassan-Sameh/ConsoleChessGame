@@ -9,8 +9,8 @@ namespace ConsoleChessProject.Pieces
         public King(string initialposition, char hexcode)
         {
             this.HexCode = hexcode;
-            this.currentPosition = Utility.MapPosition(initialposition);
-            this.positionString = initialposition;
+            //this.currentPosition = Utility.MapPosition(initialposition);
+            this.CurrentPosition = initialposition;
 
         }
         public override bool IsValidMove(Board b, string oldPosition, string newPosition)
@@ -28,7 +28,13 @@ namespace ConsoleChessProject.Pieces
             bool movedBwd = deltaX == 0 && deltaY == -1;
             bool movedRight = deltaX == 1 && deltaY == 0;
             bool movedLeft = deltaX == -1 && deltaY == 0;
-            return movedDiag || movedFwd || movedBwd || movedRight || movedLeft;
+            if( movedDiag || movedFwd || movedBwd || movedRight || movedLeft)
+            {
+                return true;
+            }
+            Console.Write("Invalid Move!\n\t\t\t\t\t");
+            return false;
+
         }
     }
 }

@@ -102,7 +102,7 @@ namespace ConsoleChessProject
             foreach(var piece in pieces)
             {
                 
-                if(!piece.positionString.Equals(position.ToLower()))
+                if(!piece.CurrentPosition.Equals(position.ToLower()))
                 {
                     continue;
                 }

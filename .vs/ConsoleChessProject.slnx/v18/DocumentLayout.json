@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\players\\whiteplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:players\\whiteplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\players\\blackplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:players\\blackplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\rook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:pieces\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\knight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,32 +43,16 @@
       "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:pieces\\bishop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:pieces\\pawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\pieces\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:pieces\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\players\\whiteplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:players\\whiteplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|h:\\software_engineering\\csharp\\consolechessproject\\players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F6062D5-CEC2-93BF-6DA5-E563401C032A}|ConsoleChessProject.csproj|solutionrelative:players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Software Engineering\\C#\\ConsoleChessProject\\Piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -69,84 +65,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pawn.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Pawn.cs",
-              "RelativeDocumentMoniker": "Pieces\\Pawn.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Pawn.cs",
-              "RelativeToolTip": "Pieces\\Pawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAATAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAABAAAAAgzszMzMwmwCgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T18:09:30.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Piece.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Piece.cs",
-              "RelativeDocumentMoniker": "Pieces\\Piece.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Piece.cs",
-              "RelativeToolTip": "Pieces\\Piece.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T16:58:30.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Rook.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Rook.cs",
-              "RelativeDocumentMoniker": "Pieces\\Rook.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Rook.cs",
-              "RelativeToolTip": "Pieces\\Rook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T17:59:58.697Z",
+              "WhenOpened": "2026-04-03T15:14:53.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Board.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Board.cs",
-              "RelativeDocumentMoniker": "Board.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Board.cs",
-              "RelativeToolTip": "Board.cs",
-              "ViewState": "AgIAAE8AAAAA3f////8DwDQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T16:28:21.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Bishop.cs",
               "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Bishop.cs",
               "RelativeDocumentMoniker": "Pieces\\Bishop.cs",
               "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Bishop.cs",
               "RelativeToolTip": "Pieces\\Bishop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAADgMjMzMzMhwCYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-03T17:31:51.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Utility.cs",
-              "RelativeDocumentMoniker": "Utility.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Utility.cs",
-              "RelativeToolTip": "Utility.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwCIAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "King.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\King.cs",
+              "RelativeDocumentMoniker": "Pieces\\King.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\King.cs",
+              "RelativeToolTip": "Pieces\\King.cs",
+              "ViewState": "AgIAAAsAAACAlJmZmZkdwCIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T16:38:31.329Z",
+              "WhenOpened": "2026-04-03T18:08:30.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Knight.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Knight.cs",
+              "RelativeDocumentMoniker": "Pieces\\Knight.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Knight.cs",
+              "RelativeToolTip": "Pieces\\Knight.cs",
+              "ViewState": "AgIAAAgAAACAMTMzMzMDwB8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:09:25.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pawn.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Pawn.cs",
+              "RelativeDocumentMoniker": "Pieces\\Pawn.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Pawn.cs",
+              "RelativeToolTip": "Pieces\\Pawn.cs",
+              "ViewState": "AgIAAA4AAABAY2ZmZmYswCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:09:30.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Queen.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Queen.cs",
+              "RelativeDocumentMoniker": "Pieces\\Queen.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Queen.cs",
+              "RelativeToolTip": "Pieces\\Queen.cs",
+              "ViewState": "AgIAABMAAADAlpmZmZktwCwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:09:34.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rook.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Rook.cs",
+              "RelativeDocumentMoniker": "Pieces\\Rook.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Rook.cs",
+              "RelativeToolTip": "Pieces\\Rook.cs",
+              "ViewState": "AgIAABEAAAAALjMzMzPzvyoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T17:59:58.697Z",
               "EditorCaption": ""
             },
             {
@@ -157,74 +166,61 @@
               "RelativeDocumentMoniker": "Players\\BlackPlayer.cs",
               "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\BlackPlayer.cs",
               "RelativeToolTip": "Players\\BlackPlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAADw//////8vwBYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T16:08:13.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WhitePlayer.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\WhitePlayer.cs",
-              "RelativeDocumentMoniker": "Players\\WhitePlayer.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\WhitePlayer.cs",
-              "RelativeToolTip": "Players\\WhitePlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\Player.cs",
+              "RelativeDocumentMoniker": "Players\\Player.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\Player.cs",
+              "RelativeToolTip": "Players\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T16:08:05.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "King.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\King.cs",
-              "RelativeDocumentMoniker": "Pieces\\King.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\King.cs",
-              "RelativeToolTip": "Pieces\\King.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T18:08:30.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Knight.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Knight.cs",
-              "RelativeDocumentMoniker": "Pieces\\Knight.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Knight.cs",
-              "RelativeToolTip": "Pieces\\Knight.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T18:09:25.041Z",
+              "WhenOpened": "2026-04-03T15:15:04.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Queen.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Queen.cs",
-              "RelativeDocumentMoniker": "Pieces\\Queen.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Pieces\\Queen.cs",
-              "RelativeToolTip": "Pieces\\Queen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAyAAAAAAAAAA==",
+              "Title": "Utility.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Utility.cs",
+              "RelativeDocumentMoniker": "Utility.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Utility.cs",
+              "RelativeToolTip": "Utility.cs",
+              "ViewState": "AgIAABgAAAAAMTMzM3MlwCkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T18:09:34.431Z",
+              "WhenOpened": "2026-04-03T16:38:31.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Board.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Board.cs",
+              "RelativeDocumentMoniker": "Board.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Board.cs",
+              "RelativeToolTip": "Board.cs",
+              "ViewState": "AgIAAFoAAAAAh5mZmZkXwDQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T16:28:21.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Game.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Title": "WhitePlayer.cs",
+              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\WhitePlayer.cs",
+              "RelativeDocumentMoniker": "Players\\WhitePlayer.cs",
+              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\WhitePlayer.cs",
+              "RelativeToolTip": "Players\\WhitePlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T15:14:53.705Z",
+              "WhenOpened": "2026-04-04T16:08:05.719Z",
               "EditorCaption": ""
             },
             {
@@ -243,18 +239,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Player.cs",
-              "DocumentMoniker": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\Player.cs",
-              "RelativeDocumentMoniker": "Players\\Player.cs",
-              "ToolTip": "H:\\Software_Engineering\\CSharp\\ConsoleChessProject\\Players\\Player.cs",
-              "RelativeToolTip": "Players\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T15:15:04.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Piece.cs",
               "DocumentMoniker": "H:\\Software Engineering\\C#\\ConsoleChessProject\\Piece.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Software Engineering\\C#\\ConsoleChessProject\\Piece.cs",

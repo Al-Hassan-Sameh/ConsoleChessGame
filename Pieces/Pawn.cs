@@ -9,8 +9,8 @@ namespace ConsoleChessProject.Pieces
         public Pawn(string initialposition, char hexcode) 
         {
             this.HexCode = hexcode;
-            this.currentPosition = Utility.MapPosition(initialposition);
-            this.positionString = initialposition;
+            //this.currentPosition = Utility.MapPosition(initialposition);
+            this.CurrentPosition = initialposition;
 
         }
 
@@ -22,9 +22,22 @@ namespace ConsoleChessProject.Pieces
             int j2 = Utility.MapPosition(newPosition).Item2;
             if (b.Tiles[i1, j1].Equals(b.blackPawn1.HexCode))
             {
-                return i1 < i2 && j1 == j2;
+                bool correctBlackMove = i1 < i2 && j1 == j2;
+                if (!correctBlackMove)
+                {
+                    Console.WriteLine("Invalid Move!");
+                    Console.WriteLine("\t\t\t\t\t");
+                    return false;
+                }
+                return true;
             }
-            return i1 > i2 && j1 == j2;
+            bool correctWhiteMove = i1 > i2 && j1 == j2;
+            if (!correctWhiteMove)
+            {
+                Console.Write("Invalid Move!\n\t\t\t\t\t");
+                return false;
+            }
+            return true;
         }
 
     }

@@ -39,7 +39,9 @@ namespace ConsoleChessProject
                     return true;
                 }
             }
-            Console.WriteLine("\t\t\t\t\tIt's not your piece!");
+            Console.Write("\t\t\t\t\tIt's not your piece!\n\t\t\t\t\t");
+            return false;
+
             return false;
         }
         //public static bool IsEmptyTile(Board board, string position)
@@ -98,8 +100,8 @@ namespace ConsoleChessProject
         }
         public static Board PlacePiece(Board board, Piece piece)
         {
-            int i = piece.currentPosition.Item1;
-            int j = piece.currentPosition.Item2;
+            int i = Utility.MapPosition(piece.CurrentPosition).Item1;
+            int j = Utility.MapPosition(piece.CurrentPosition).Item2;
             board.Tiles[i, j] = piece.HexCode;
             return board;
         }

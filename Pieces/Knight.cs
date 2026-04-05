@@ -9,8 +9,8 @@ namespace ConsoleChessProject.Pieces
         public Knight(string initialposition, char hexcode) 
         {
             this.HexCode = hexcode;
-            this.currentPosition = Utility.MapPosition(initialposition);
-            this.positionString = initialposition;
+            //this.currentPosition = Utility.MapPosition(initialposition);
+            this.CurrentPosition = initialposition;
 
         }
         public override bool IsValidMove(Board b, string oldPosition, string newPosition)
@@ -25,7 +25,12 @@ namespace ConsoleChessProject.Pieces
 
             bool movedL1 = absDeltaX == 1 && absDeltaY == 2;
             bool movedL2 = absDeltaX == 2 && absDeltaY == 1;
-            return movedL1 || movedL2;
+            if(movedL1 || movedL2)
+            {
+                return true;
+            }
+            Console.Write("Invalid Move!\n\t\t\t\t\t");
+            return false;
         }
     }
 }
