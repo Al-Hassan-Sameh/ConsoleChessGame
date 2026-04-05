@@ -15,39 +15,36 @@ namespace ConsoleChessProject
             int j = MapPosition(position).Item2;
             return board.Tiles[i, j] == '•';
         }
-        public static bool IsBlackPiece(Board b, Piece p, string position)
+        public static bool PieceBelongsToPlayer(Board b, Piece p, string position, string color)
         {
             int i = MapPosition(position).Item1;
             int j = MapPosition(position).Item2;
             List<Piece> blackPieces = new List<Piece> { b.blackBishop1, b.blackBishop2, b.blackRook1, b.blackRook2, b.blackKing, b.blackQueen, b.blackKnight1, b.blackKnight2,
             b.blackPawn1, b.blackPawn2, b.blackPawn3, b.blackPawn4, b.blackPawn5, b.blackPawn6, b.blackPawn7, b.blackPawn8};
-            foreach(var piece in blackPieces)
-            {
-                if(piece.HexCode == p.HexCode)
-                {
-                    return true;
-                }
-            }
-            Console.WriteLine("\t\t\t\t\tIt's not your piece!\n\t\t\t\t\t");
-            return false;
-        }
-        public static bool IsWhitePiece(Board b, Piece p, string position)
-        {
-            int i = MapPosition(position).Item1;
-            int j = MapPosition(position).Item2;
             List<Piece> whitePieces = new List<Piece> { b.whiteBishop1, b.whiteBishop2, b.whiteKing, b.whiteKnight1, b.whiteKnight2, b.whiteRook1, b.whiteRook2,
             b.whiteQueen, b.whitePawn1, b.whitePawn2, b.whitePawn3, b.whitePawn4, b.whitePawn5, b.whitePawn6, b.whitePawn7, b.whitePawn8
             };
-            foreach (var piece in whitePieces)
+            if (color.Equals("Black"))
             {
-                if(piece.HexCode == p.HexCode)
+                foreach (var piece in blackPieces)
                 {
-                    return true;
+                    if(piece.HexCode == p.HexCode)
+                    {
+                        return true;
+                    }
                 }
             }
-            Console.Write("\t\t\t\t\tIt's not your piece!\n\t\t\t\t\t");
-            return false;
-
+            else if (color.Equals("White"))
+            {
+                foreach (var piece in whitePieces)
+                {
+                    if (piece.HexCode == p.HexCode)
+                    {
+                        return true;
+                    }
+                }
+            }
+            Console.WriteLine("\t\t\t\t\tIt's not your piece!\n\t\t\t\t\t");
             return false;
         }
 
