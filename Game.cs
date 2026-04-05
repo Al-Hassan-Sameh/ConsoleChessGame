@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ConsoleChessProject.Pieces;
 using ConsoleChessProject.Players;
 
 namespace ConsoleChessProject
@@ -12,12 +13,14 @@ namespace ConsoleChessProject
             Player player1 = new WhitePlayer();
             Player player2 = new BlackPlayer();
 
-            Board b = new Board();
-            b = Utility.SetUpBoard(b);
-            Utility.PrintBoard(b);
+            Board board = new Board();
+            board = Utility.SetUpBoard(board);
+            Utility.PrintBoard(board);
             string[] move  = new string[2];
             string oldPosition = "";
             string newPositon = "";
+            Piece piece = new Rook("h1", '\u265C');
+
             while (true)
             {
                 do
@@ -26,19 +29,27 @@ namespace ConsoleChessProject
                     move = Utility.ReadNewMove();
                     oldPosition = move[0].ToLower();
                     newPositon = move[1].ToLower();
+                    while (!Utility.IsEmpty(board, oldPosition))
+                    {
+                        piece = board.GetPiece(oldPosition);
+                    }
                 }
-                while (!Utility.IsWhitePiece(b, b.GetPiece(oldPosition), oldPosition));
-                b = player1.MovePiece(b, b.GetPiece(oldPosition), newPositon);
-                Utility.PrintBoard(b);
+                while (piece is not null && !Utility.IsWhitePiece(board, piece, oldPosition));
+                board = player1.MovePiece(board, piece, newPositon);
+                Utility.PrintBoard(board);
                 do
                 {
                     move = Utility.ReadNewMove();
                     oldPosition = move[0].ToLower();
                     newPositon = move[1].ToLower();
+                    while (!Utility.IsEmpty(board, oldPosition))
+                    {
+                        piece = board.GetPiece(oldPosition);
+                    }
                 }
-                while (!Utility.IsBlackPiece(b, b.GetPiece(oldPosition), oldPosition));
-                b = player2.MovePiece(b, b.GetPiece(oldPosition), newPositon);
-                Utility.PrintBoard(b);
+                while (piece is not null && !Utility.IsBlackPiece(board, piece, oldPosition));
+                board = player2.MovePiece(board, board.GetPiece(oldPosition), newPositon);
+                Utility.PrintBoard(board);
             }
 
         }

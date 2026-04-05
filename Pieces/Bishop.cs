@@ -36,7 +36,7 @@ namespace ConsoleChessProject.Pieces
                 }
                 
             }
-            Console.Write("Invalid Move!\n\t\t\t\t\t");
+            Console.WriteLine("Invalid Move!\n\t\t\t\t\t");
             return false;
         }
 

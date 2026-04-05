@@ -90,6 +90,7 @@ namespace ConsoleChessProject
         }
         public Piece GetPiece(string position)
         {
+            
             int i = Utility.MapPosition(position).Item1;
             int j = Utility.MapPosition(position).Item2;
             List<Piece> pieces = new List<Piece>{

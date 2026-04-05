@@ -9,6 +9,12 @@ namespace ConsoleChessProject
     internal static class Utility
     {
 
+        public static bool IsEmpty(Board board, string position)
+        {
+            int i = MapPosition(position).Item1;
+            int j = MapPosition(position).Item2;
+            return board.Tiles[i, j] == '•';
+        }
         public static bool IsBlackPiece(Board b, Piece p, string position)
         {
             int i = MapPosition(position).Item1;

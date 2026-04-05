@@ -34,7 +34,7 @@ namespace ConsoleChessProject.Pieces
             bool correctWhiteMove = i1 > i2 && j1 == j2;
             if (!correctWhiteMove)
             {
-                Console.Write("Invalid Move!\n\t\t\t\t\t");
+                Console.WriteLine("Invalid Move!\n\t\t\t\t\t");
                 return false;
             }
             return true;
