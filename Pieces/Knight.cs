@@ -13,7 +13,7 @@ namespace ConsoleChessProject.Pieces
             this.CurrentPosition = initialposition;
 
         }
-        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition, string color)
         {
             int i1 = Utility.MapPosition(oldPosition).Item1;
             int j1 = Utility.MapPosition(oldPosition).Item2;

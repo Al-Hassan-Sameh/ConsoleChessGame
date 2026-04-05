@@ -14,7 +14,7 @@ namespace ConsoleChessProject.Pieces
             this.CurrentPosition = initialposition;
         }
 
-        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition, string color)
         {
 
 
@@ -22,7 +22,10 @@ namespace ConsoleChessProject.Pieces
             int j1 = Utility.MapPosition(oldPosition).Item2;
             int i2 = Utility.MapPosition(newPosition).Item1;
             int j2 = Utility.MapPosition(newPosition).Item2;
-
+            if (Utility.SelfKill(b, newPosition, color))
+            {
+                return false;
+            }
             int deltaX = j2 - j1;
             int deltaY = i2 - i1;
             bool validDeltaX = Enumerable.Range(0, 8).Contains(Math.Abs(deltaX));

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleChessProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86acf84bf71210520098aba1607fc4adad65b81b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98e1d87d55a1ef6ad74599b2ee17b5650d4c4165")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleChessProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleChessProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

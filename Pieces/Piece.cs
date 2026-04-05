@@ -10,7 +10,7 @@ namespace ConsoleChessProject.Pieces
         //public Tuple<int, int> currentPosition { get; set; }
         public string CurrentPosition { get; set; }
 
-        public abstract bool IsValidMove(Board b, string oldPosition, string newPosition);
+        public abstract bool IsValidMove(Board b, string oldPosition, string newPosition, string color);
        
 
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using ConsoleChessProject.Pieces;
 using ConsoleChessProject.Players;
@@ -15,14 +16,33 @@ namespace ConsoleChessProject
             int j = MapPosition(position).Item2;
             return board.Tiles[i, j] == '•';
         }
-        public static bool PieceBelongsToPlayer(Board b, Piece p, string position, string color)
+
+        public static bool SelfKill(Board board, string newPosition, string color) // validate if player tries to kill their pieces by his own pieces
+        {
+            List<Piece> blackPieces = new List<Piece> { board.blackBishop1, board.blackBishop2, board.blackRook1, board.blackRook2, board.blackKing, board.blackQueen, board.blackKnight1, board.blackKnight2,
+            board.blackPawn1, board.blackPawn2, board.blackPawn3, board.blackPawn4, board.blackPawn5, board.blackPawn6, board.blackPawn7, board.blackPawn8};
+            List<Piece> whitePieces = new List<Piece> { board.whiteBishop1, board.whiteBishop2, board.whiteKing, board.whiteKnight1, board.whiteKnight2, board.whiteRook1, board.whiteRook2,
+            board.whiteQueen, board.whitePawn1, board.whitePawn2, board.whitePawn3, board.whitePawn4, board.whitePawn5, board.whitePawn6, board.whitePawn7, board.whitePawn8
+            };
+
+            if (color.Equals("White") && whitePieces.Contains(board.GetPiece(newPosition)))
+            {
+                return true;
+            }
+            if (color.Equals("Black") && blackPieces.Contains(board.GetPiece(newPosition)))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool PieceBelongsToPlayer(Board board, Piece p, string position, string color)
         {
             int i = MapPosition(position).Item1;
             int j = MapPosition(position).Item2;
-            List<Piece> blackPieces = new List<Piece> { b.blackBishop1, b.blackBishop2, b.blackRook1, b.blackRook2, b.blackKing, b.blackQueen, b.blackKnight1, b.blackKnight2,
-            b.blackPawn1, b.blackPawn2, b.blackPawn3, b.blackPawn4, b.blackPawn5, b.blackPawn6, b.blackPawn7, b.blackPawn8};
-            List<Piece> whitePieces = new List<Piece> { b.whiteBishop1, b.whiteBishop2, b.whiteKing, b.whiteKnight1, b.whiteKnight2, b.whiteRook1, b.whiteRook2,
-            b.whiteQueen, b.whitePawn1, b.whitePawn2, b.whitePawn3, b.whitePawn4, b.whitePawn5, b.whitePawn6, b.whitePawn7, b.whitePawn8
+            List<Piece> blackPieces = new List<Piece> { board.blackBishop1, board.blackBishop2, board.blackRook1, board.blackRook2, board.blackKing, board.blackQueen, board.blackKnight1, board.blackKnight2,
+            board.blackPawn1, board.blackPawn2, board.blackPawn3, board.blackPawn4, board.blackPawn5, board.blackPawn6, board.blackPawn7, board.blackPawn8};
+            List<Piece> whitePieces = new List<Piece> { board.whiteBishop1, board.whiteBishop2, board.whiteKing, board.whiteKnight1, board.whiteKnight2, board.whiteRook1, board.whiteRook2,
+            board.whiteQueen, board.whitePawn1, board.whitePawn2, board.whitePawn3, board.whitePawn4, board.whitePawn5, board.whitePawn6, board.whitePawn7, board.whitePawn8
             };
             if (color.Equals("Black"))
             {

@@ -14,7 +14,7 @@ namespace ConsoleChessProject.Pieces
 
         }
 
-        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition, string color)
         {
             int i1 = Utility.MapPosition(oldPosition).Item1;
             int j1 = Utility.MapPosition(oldPosition).Item2;
@@ -24,7 +24,7 @@ namespace ConsoleChessProject.Pieces
             int deltaY = i2 - i1;
             if (b.Tiles[i1, j1].Equals(b.blackPawn1.HexCode))
             {
-                bool correctBlackMove = deltaY == 1 && deltaX == 0;
+                bool correctBlackMove = (deltaY == 1 && deltaX == 0) || (deltaY > 0 && deltaX == deltaY);
                 if (!correctBlackMove)
                 {
                     Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");
@@ -32,7 +32,7 @@ namespace ConsoleChessProject.Pieces
                 }
                 return true;
             }
-            bool correctWhiteMove = deltaY == -1 && deltaX == 0;
+            bool correctWhiteMove = (deltaY == -1 && deltaX == 0) || (deltaY < 0 && deltaX == deltaY) ;
             if (!correctWhiteMove)
             {
                 Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");

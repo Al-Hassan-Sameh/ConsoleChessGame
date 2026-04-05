@@ -32,8 +32,18 @@ namespace ConsoleChessProject.Players
                 newPositon = move[1].ToLower();
                 if (!Utility.IsValidPosition(oldPosition) && !Utility.IsValidPosition(newPositon)) // validate positions
                 {
+                    Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");
                     continue;
                 }
+
+
+
+                List<Piece> blackPieces = new List<Piece> { board.blackBishop1, board.blackBishop2, board.blackRook1, board.blackRook2, board.blackKing, board.blackQueen, board.blackKnight1, board.blackKnight2,
+                board.blackPawn1, board.blackPawn2, board.blackPawn3, board.blackPawn4, board.blackPawn5, board.blackPawn6, board.blackPawn7, board.blackPawn8};
+                List<Piece> whitePieces = new List<Piece> { board.whiteBishop1, board.whiteBishop2, board.whiteKing, board.whiteKnight1, board.whiteKnight2, board.whiteRook1, board.whiteRook2,
+                board.whiteQueen, board.whitePawn1, board.whitePawn2, board.whitePawn3, board.whitePawn4, board.whitePawn5, board.whitePawn6, board.whitePawn7, board.whitePawn8
+                };
+                //if (color.Equals(whitePieces) && blackPieces.Contains(piece))
                 while (!Utility.IsEmpty(board, oldPosition)) // validate that player doesn't move an empty tile
                 {
                     piece = board.GetPiece(oldPosition);
@@ -43,11 +53,12 @@ namespace ConsoleChessProject.Players
                 {
                     continue;
                 }
-                if (piece.IsValidMove(board, oldPosition, newPositon)) // finally, validate the move itself
+                if (piece.IsValidMove(board, oldPosition, newPositon, color)) // finally, validate the move itself
                 {
                     board = this.MovePiece(board, piece, newPositon);
                     break;
                 }
+                Console.WriteLine("\t\t\t\t\tInvalid Move!\n\t\t\t\t\t");
                 continue;
             }
             return board;
