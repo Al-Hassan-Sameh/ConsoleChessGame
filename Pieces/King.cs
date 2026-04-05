@@ -4,16 +4,16 @@ using System.Text;
 
 namespace ConsoleChessProject.Pieces
 {
-    internal class BlackKing : Piece
+    internal class King : Piece
     {
-        public BlackKing(string initialposition)
+        public King(string initialposition, char hexcode)
         {
-            this.hexCode = '\u2654';
+            this.HexCode = hexcode;
             this.currentPosition = Utility.MapPosition(initialposition);
             this.positionString = initialposition;
 
         }
-        public override bool IsValidMove(string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
         {
             int i1 = Utility.MapPosition(oldPosition).Item1;
             int j1 = Utility.MapPosition(oldPosition).Item2;

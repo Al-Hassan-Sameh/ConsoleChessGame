@@ -4,18 +4,17 @@ using System.Text;
 
 namespace ConsoleChessProject.Pieces
 {
-    internal class BlackBishop : Piece
+    internal class Rook : Piece    
     {
-        public BlackBishop(string initialposition) 
+        public Rook(string initialposition, char hexcode) 
         {
-            this.hexCode = '\u2657';
+            this.HexCode = hexcode;
             this.currentPosition = Utility.MapPosition(initialposition);
             this.positionString = initialposition;
+
         }
-
-        public override bool IsValidMove(string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
         {
-
 
             int i1 = Utility.MapPosition(oldPosition).Item1;
             int j1 = Utility.MapPosition(oldPosition).Item2;
@@ -28,8 +27,11 @@ namespace ConsoleChessProject.Pieces
             bool validDeltaY = Enumerable.Range(0, 8).Contains(Math.Abs(deltaY));
             if (validDeltaX && validDeltaY)
             {
-                bool movedDiag = Math.Abs(deltaY) == Math.Abs(deltaX);
-                List<bool> bools = new List<bool> { movedDiag};
+                bool movedFwd = deltaY > 0 && deltaX == 0;
+                bool movedBwd = deltaY < 0 && deltaX == 0;
+                bool movedRight = deltaY == 0 && deltaX > 0;
+                bool movedLeft = deltaY == 0 && deltaY < 0;
+                List<bool> bools = new List<bool> { movedFwd, movedBwd, movedRight, movedLeft };
                 foreach (var move in bools)
                 {
                     if (move)
@@ -41,6 +43,5 @@ namespace ConsoleChessProject.Pieces
             Console.WriteLine("Invalid Move!");
             return false;
         }
-
     }
 }

@@ -1,28 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Text;
 
 namespace ConsoleChessProject.Pieces
 {
-    internal class WhitePawn : Piece
+    internal class Knight : Piece
     {
-        public WhitePawn(string initialposition) 
+        public Knight(string initialposition, char hexcode) 
         {
-            this.hexCode = '\u265F';
+            this.HexCode = hexcode;
             this.currentPosition = Utility.MapPosition(initialposition);
             this.positionString = initialposition;
 
         }
-
-        public override bool IsValidMove(string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
         {
             int i1 = Utility.MapPosition(oldPosition).Item1;
             int j1 = Utility.MapPosition(oldPosition).Item2;
             int i2 = Utility.MapPosition(newPosition).Item1;
             int j2 = Utility.MapPosition(newPosition).Item2;
-            return i1 > i2 && j1 == j2;
-        }
 
+            int absDeltaX = Math.Abs(j2 - j1);
+            int absDeltaY = Math.Abs(i2 - i1);
+
+            bool movedL1 = absDeltaX == 1 && absDeltaY == 2;
+            bool movedL2 = absDeltaX == 2 && absDeltaY == 1;
+            return movedL1 || movedL2;
+        }
     }
 }

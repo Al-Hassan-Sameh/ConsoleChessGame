@@ -52,39 +52,39 @@ namespace ConsoleChessProject
                     this.Tiles[i, j] = '•';
                 }
             }
-            this.blackRook1 = new BlackRook("a8");
-            this.blackKnight1 = new BlackKnight("b8");
-            this.blackBishop1 = new BlackBishop("c8");
-            this.blackQueen = new BlackQueen("d8");
-            this.blackKing = new BlackKing("e8");
-            this.blackBishop2 = new BlackBishop("f8");
-            this.blackKnight2 = new BlackKnight("g8");
-            this.blackRook2 = new BlackRook("h8");
-            this.blackPawn1 = new BlackPawn("a7");
-            this.blackPawn2 = new BlackPawn("b7");
-            this.blackPawn3 = new BlackPawn("c7");
-            this.blackPawn4 = new BlackPawn("d7");
-            this.blackPawn5 = new BlackPawn("e7");
-            this.blackPawn6 = new BlackPawn("f7");
-            this.blackPawn7 = new BlackPawn("g7");
-            this.blackPawn8 = new BlackPawn("h7");
+            this.blackRook1 = new Rook("a8", '\u2656');
+            this.blackKnight1 = new Knight("b8",'\u2658');
+            this.blackBishop1 = new Bishop("c8", '\u2657');
+            this.blackQueen = new Queen("d8", '\u2655');
+            this.blackKing = new King("e8", '\u2654');
+            this.blackBishop2 = new Bishop("f8", '\u2654');
+            this.blackKnight2 = new Knight("g8", '\u2658');
+            this.blackRook2 = new Rook("h8", '\u2656');
+            this.blackPawn1 = new Pawn("a7", '\u2659');
+            this.blackPawn2 = new Pawn("b7", '\u2659');
+            this.blackPawn3 = new Pawn("c7", '\u2659');
+            this.blackPawn4 = new Pawn("d7", '\u2659');
+            this.blackPawn5 = new Pawn("e7", '\u2659');
+            this.blackPawn6 = new Pawn("f7", '\u2659');
+            this.blackPawn7 = new Pawn("g7", '\u2659');
+            this.blackPawn8 = new Pawn("h7", '\u2659');
 
-            this.whiteRook1 = new WhiteRook("a1");
-            this.whiteKnight1 = new WhiteKnight("b1");
-            this.whiteBishop1 = new WhiteBishop("c1");
-            this.whiteQueen = new WhiteQueen("d1");
-            this.whiteKing = new WhiteKing("e1");
-            this.whiteBishop2 = new WhiteBishop("f1");
-            this.whiteKnight2 = new WhiteKnight("g1");
-            this.whiteRook2 = new WhiteRook("h1");
-            this.whitePawn1 = new WhitePawn("a2");
-            this.whitePawn2 = new WhitePawn("b2");
-            this.whitePawn3 = new WhitePawn("c2");
-            this.whitePawn4 = new WhitePawn("d2");
-            this.whitePawn5 = new WhitePawn("e2");
-            this.whitePawn6 = new WhitePawn("f2");
-            this.whitePawn7 = new WhitePawn("g2");
-            this.whitePawn8 = new WhitePawn("h2");
+            this.whiteRook1 = new Rook("a1", '\u265C');
+            this.whiteKnight1 = new Knight("b1", '\u265E');
+            this.whiteBishop1 = new Bishop("c1",'\u265D');
+            this.whiteQueen = new Queen("d1", '\u265B');
+            this.whiteKing = new King("e1", '\u265A');
+            this.whiteBishop2 = new Bishop("f1", '\u265D');
+            this.whiteKnight2 = new Knight("g1", '\u265E');
+            this.whiteRook2 = new Rook("h1",'\u265C');
+            this.whitePawn1 = new Pawn("a2", '\u265F');
+            this.whitePawn2 = new Pawn("b2", '\u265F');
+            this.whitePawn3 = new Pawn("c2", '\u265F');
+            this.whitePawn4 = new Pawn("d2", '\u265F');
+            this.whitePawn5 = new Pawn("e2", '\u265F');
+            this.whitePawn6 = new Pawn("f2", '\u265F');
+            this.whitePawn7 = new Pawn("g2", '\u265F');
+            this.whitePawn8 = new Pawn("h2", '\u265F');
 
 
         }

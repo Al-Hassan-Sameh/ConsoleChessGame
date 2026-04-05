@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleChessProject.Pieces
 {
-    internal class WhiteQueen : Piece
+    internal class Queen : Piece
     {
-        public WhiteQueen(string initialposition)
-        {
-            this.hexCode = '\u265B';
+        public Queen(string initialposition, char hexcode) 
+        { 
+            this.HexCode = hexcode;
             this.currentPosition = Utility.MapPosition(initialposition);
             this.positionString = initialposition;
 
         }
-        public override bool IsValidMove(string oldPosition, string newPosition)
+        public override bool IsValidMove(Board b, string oldPosition, string newPosition)
         {
 
             int i1 = Utility.MapPosition(oldPosition).Item1;
@@ -28,12 +29,12 @@ namespace ConsoleChessProject.Pieces
             if (validDeltaX && validDeltaY)
             {
                 bool movedDiag = Math.Abs(deltaY) == Math.Abs(deltaX);
-                bool movedFwd = deltaY > 0 && deltaX == 0;
-                bool movedBwd = deltaY < 0 && deltaX == 0;
+                bool movedFwd = deltaY>0 && deltaX ==0;
+                bool movedBwd = deltaY < 0 && deltaX ==0;
                 bool movedRight = deltaY == 0 && deltaX > 0;
                 bool movedLeft = deltaY == 0 && deltaY < 0;
-                List<bool> bools = new List<bool> { movedDiag, movedFwd, movedBwd, movedRight, movedLeft };
-                foreach (var move in bools)
+                List<bool> bools = new List<bool> {movedDiag, movedFwd, movedBwd, movedRight, movedLeft };
+                foreach(var move in bools)
                 {
                     if (move)
                     {
@@ -41,7 +42,7 @@ namespace ConsoleChessProject.Pieces
                     }
                 }
             }
-            Console.WriteLine("Invalid Move!");
+             Console.WriteLine("Invalid Move!");
             return false;
         }
     }

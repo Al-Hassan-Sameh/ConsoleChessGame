@@ -17,7 +17,7 @@ namespace ConsoleChessProject
             b.blackPawn1, b.blackPawn2, b.blackPawn3, b.blackPawn4, b.blackPawn5, b.blackPawn6, b.blackPawn7, b.blackPawn8};
             foreach(var piece in blackPieces)
             {
-                if(piece.hexCode == p.hexCode)
+                if(piece.HexCode == p.HexCode)
                 {
                     return true;
                 }
@@ -34,7 +34,7 @@ namespace ConsoleChessProject
             };
             foreach (var piece in whitePieces)
             {
-                if(piece.hexCode == p.hexCode)
+                if(piece.HexCode == p.HexCode)
                 {
                     return true;
                 }
@@ -100,11 +100,11 @@ namespace ConsoleChessProject
         {
             int i = piece.currentPosition.Item1;
             int j = piece.currentPosition.Item2;
-            board.Tiles[i, j] = piece.hexCode;
+            board.Tiles[i, j] = piece.HexCode;
             return board;
         }
         public static void PrintBoard(Board board)
-        {
+            {
             Console.WriteLine("\t\t\t\t\t----------------------------------------");
             for(int i = 0; i < 8; i++)
             {

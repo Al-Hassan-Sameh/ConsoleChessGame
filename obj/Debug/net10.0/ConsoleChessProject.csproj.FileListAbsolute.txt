@@ -12,3 +12,18 @@ H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\refint\ConsoleC
 H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.pdb
 H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.genruntimeconfig.cache
 H:\Software Engineering\C#\ConsoleChessProject\obj\Debug\net10.0\ref\ConsoleChessProject.dll
+H:\Software_Engineering\CSharp\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.exe
+H:\Software_Engineering\CSharp\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.deps.json
+H:\Software_Engineering\CSharp\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.runtimeconfig.json
+H:\Software_Engineering\CSharp\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.dll
+H:\Software_Engineering\CSharp\ConsoleChessProject\bin\Debug\net10.0\ConsoleChessProject.pdb
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.GeneratedMSBuildEditorConfig.editorconfig
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.AssemblyInfoInputs.cache
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.AssemblyInfo.cs
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.csproj.CoreCompileInputs.cache
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.sourcelink.json
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.dll
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\refint\ConsoleChessProject.dll
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.pdb
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ConsoleChessProject.genruntimeconfig.cache
+H:\Software_Engineering\CSharp\ConsoleChessProject\obj\Debug\net10.0\ref\ConsoleChessProject.dll

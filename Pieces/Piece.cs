@@ -6,11 +6,11 @@ namespace ConsoleChessProject.Pieces
 {
     internal abstract class Piece
     {
-        public char hexCode { get; set; }
+        public char HexCode { get; set; }
         public Tuple<int, int> currentPosition { get; set; }
         public string positionString { get; set; }
 
-        public abstract bool IsValidMove(string oldPosition, string newPosition);
+        public abstract bool IsValidMove(Board b, string oldPosition, string newPosition);
        
 
     }
